@@ -14,5 +14,8 @@ class TagTest < ActiveSupport::TestCase
     tag.locations << location
 
     assert tag.save!
+
+    tag = Tag.where(name: "T").first
+    assert_equal(tag.locations.first.name, "L")
   end
 end
