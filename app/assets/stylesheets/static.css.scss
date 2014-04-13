@@ -1,3 +1,18 @@
-// Place all the styles related to the static controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  width: 50%;
+}
+
+.location-header {
+  background-color: gray;
+  height: 60px;
+}
+
+.location-body {
+  background-color: orange;
+  height: 100px;
+}
+
+.location-footer {
+  background-color: green;
+  margin-bottom: 10px;
+}

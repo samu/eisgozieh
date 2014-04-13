@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require angular
 //= require angular-route
+//= require static
 //= require_tree .

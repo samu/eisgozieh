@@ -1,1 +1,12 @@
-%h1 Hello World
+#index-view(ng-controller="IndexCtrl")
+  %header
+    %h1 Eis go zieh
+
+  %section.locations
+    %article.location(ng-repeat="location in locations")
+      .location-header
+        %h2 {{location.name}}
+      .location-body
+        BILDLI
+      .location-footer
+        {{location.address}}
