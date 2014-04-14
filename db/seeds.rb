@@ -1,9 +1,9 @@
 Location.delete_all
 Tag.delete_all
 
-geili_kneipe = Location.create({name: "Geili Kneipe"})
-tolls_pub    = Location.create({name: "Tolls Pub"})
-lieblingsbar = Location.create({name: "Lieblingsbar"})
+geili_kneipe = Location.create({name: "Geili Kneipe", city: "Zürich", zip_code: 8000, street: "Langstrasse 1"})
+tolls_pub    = Location.create({name: "Tolls Pub", city: "Zürich", zip_code: 8000, street: "Langstrasse 2"})
+lieblingsbar = Location.create({name: "Lieblingsbar", city: "Zürich", zip_code: 8000, street: "Langstrasse 3"})
 
 gesellig = Tag.create({name: "Gesellig"})
 laut     = Tag.create({name: "Laut"})
