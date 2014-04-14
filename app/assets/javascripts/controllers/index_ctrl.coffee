@@ -1,9 +1,6 @@
 angular.module("eisgozieh").controller("IndexCtrl", ["$scope", ($scope) ->
   $scope.background_image = (url) ->
-    dings = {"background-image": "url:('#{url}')"}
-    console.log dings
-    # {"background-image": "red"}
-    dings
+    {"background-image": "url:('#{url}')"}
 
   $scope.locations = [{
       name: "Geili Kneipe"
