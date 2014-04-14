@@ -2,11 +2,16 @@
   %header
     %h1 Eis go zieh
 
+  %section.search
+    %input.input-lg.form-control(type="text" placeholder="Suchen...")
+
   %section.locations
     %article.location(ng-repeat="location in locations")
       .location-header
         %h2 {{location.name}}
+        %span.label.label-info(ng-repeat="tag in location.tags")
+          {{tag}}
       .location-body
-        BILDLI
+        .picture(ng-style="{'background-image' : 'url(' + location.picture + ')'}")
       .location-footer
         {{location.address}}

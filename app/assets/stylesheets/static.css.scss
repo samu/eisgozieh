@@ -2,17 +2,36 @@
   width: 50%;
 }
 
+.search {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .location-header {
-  background-color: gray;
-  height: 60px;
+  border: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none;
+  padding-left: 10px;
 }
 
 .location-body {
   background-color: orange;
-  height: 100px;
+  height: 200px;
 }
 
 .location-footer {
-  background-color: green;
-  margin-bottom: 10px;
+  border: solid;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 0 0 4px 4px;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+
+.picture {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
