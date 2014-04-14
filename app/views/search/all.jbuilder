@@ -7,4 +7,6 @@ json.locations @locations do |location|
     tag.name
   end
   json.tags tags
+  # TODO reference a real picture source
+  json.picture "http://www.normlos.ch/images/Fotografie/hafenkneipe/hk2.jpg"
 end
