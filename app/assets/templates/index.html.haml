@@ -4,6 +4,7 @@
 
   %section.search
     %input.input-lg.form-control(type="text" placeholder="Suchen...")
+    %button.btn(ng-click="search()") Suchen
 
   %section.locations
     %article.location(ng-repeat="location in locations")
@@ -14,4 +15,7 @@
       .location-body
         .picture(ng-style="{'background-image' : 'url(' + location.picture + ')'}")
       .location-footer
-        {{location.address}}
+        %strong
+          {{location.zip_code}} {{location.city}}
+        %em
+          {{location.street}}
