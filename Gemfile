@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.0.0"
+
 gem 'rails', '4.1.0'
 
 gem 'pg'
@@ -26,4 +28,10 @@ gem 'spring', group: :development
 
 gem 'rails_12factor', group: :production
 
-gem 'minitest-rails', '2.0.0.beta1'
+gem 'minitest-rails', '2.0.0.beta1', group: [:development, :test]
+
+gem "teaspoon", :git => 'git://github.com/samu/teaspoon', group: [:development, :test]
+
+gem "guard-teaspoon", group: [:development, :test]
+
+gem "pry", group: [:development, :test]
